@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table border="1" cellpadding="8" style="border-collapse: collapse;">
+        <thead>
+            <tr>
+                <th>Category</th>
+                <th>Item</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <!-- This cell spans 2 rows down -->
+                <td rowspan="2"><b>Fruit</b></td>
+                <td>Apple</td>
+                <td>₹80</td>
+            </tr>
+            <tr>
+                <!-- The "Fruit" cell is omitted here because it's merged from above -->
+                <td>Banana</td>
+                <td>₹40</td>
+            </tr>
+            <tr>
+                <!-- Normal row without merging -->
+                <td><b>Dairy</b></td>
+                <td>Milk</td>
+                <td>₹60</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
