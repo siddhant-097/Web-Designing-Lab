@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Entry Table</title>
+
+    <style>
+        table {
+            width: 600px;
+            border-collapse: collapse;
+            margin: 30px auto;
+        }
+
+        th,
+        td {
+            border: 1px solid #999;
+            padding: 10px;
+            text-align: center;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
+
+        input {
+            padding: 5px;
+        }
+
+        button {
+            padding: 8px 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<form>
+
+<table>
+
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Course</th>
+    </tr>
+
+    <tr>
+        <td><input type="text"></td>
+        <td><input type="number"></td>
+        <td><input type="text"></td>
+    </tr>
+
+    <tr>
+        <td><input type="text"></td>
+        <td><input type="number"></td>
+        <td><input type="text"></td>
+    </tr>
+
+</table>
+
+<center>
+    <button type="submit">Submit</button>
+</center>
+
+</form>
+
+</body>
+</html>

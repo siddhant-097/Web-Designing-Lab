@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+    <link rel="stylesheet" href="1.css">
+</head>
+<body>
+
+    <h2>Student Information Form</h2>
+
+    <form>
+        <label>Name:</label>
+        <input type="text" name="name">
+
+        <label>Password:</label>
+        <input type="password" name="password">
+
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female
+
+        <label>Hobbies:</label>
+        <input type="checkbox" name="hobby" value="reading"> Reading
+        <input type="checkbox" name="hobby" value="sports"> Sports
+        <input type="checkbox" name="hobby" value="music"> Music
+
+        <label>Course:</label>
+        <select name="course">
+            <option>BCA</option>
+            <option>MCA</option>
+            <option>B.Tech</option>
+        </select>
+
+        <label>Address:</label>
+        <textarea rows="4"></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>

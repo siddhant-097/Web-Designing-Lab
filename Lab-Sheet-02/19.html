@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Typography Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        label {
+            font-family: Georgia, serif;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        input,
+        textarea {
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+            letter-spacing: 0.5px;
+        }
+
+        input::placeholder,
+        textarea::placeholder {
+            font-family: Arial;
+            letter-spacing: 1px;
+            text-transform: capitalize;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>Registration Form</h2>
+
+<form>
+
+    <label>Name</label>
+    <input type="text" placeholder="enter your name">
+
+    <br><br>
+
+    <label>Email</label>
+    <input type="email" placeholder="enter your email">
+
+    <br><br>
+
+    <label>Address</label>
+    <textarea placeholder="enter your address"></textarea>
+
+</form>
+
+</body>
+</html>

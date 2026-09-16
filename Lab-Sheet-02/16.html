@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Evaluation</title>
+
+    <style>
+        form {
+            width: 600px;
+            margin: auto;
+        }
+
+        .field {
+            margin-bottom: 15px;
+            overflow: auto;
+        }
+
+        label {
+            width: 150px;
+            float: left;
+        }
+
+        input,
+        select {
+            width: 300px;
+            padding: 8px;
+            float: left;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<form>
+
+    <h2>Employee Evaluation</h2>
+
+    <div class="field">
+        <label>Employee Name:</label>
+        <input type="text">
+    </div>
+
+    <div class="field">
+        <label>Department:</label>
+        <select>
+            <option>IT</option>
+            <option>HR</option>
+            <option>Finance</option>
+        </select>
+    </div>
+
+    <div class="field">
+        <label>Performance:</label>
+        <input type="text">
+    </div>
+
+    <div class="clear"></div>
+
+    <button type="submit">Submit</button>
+
+</form>
+
+</body>
+</html>

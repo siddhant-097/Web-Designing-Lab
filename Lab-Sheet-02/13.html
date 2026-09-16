@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Custom Controls</title>
+
+    <style>
+        input {
+            display: none;
+        }
+
+        label {
+            display: block;
+            margin: 15px;
+            cursor: pointer;
+        }
+
+        label::before {
+            content: "";
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            border: 2px solid #555;
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+
+        input:checked + label::after {
+            content: "✓";
+            position: absolute;
+            margin-left: -25px;
+            margin-top: 1px;
+        }
+
+        .radio::before {
+            border-radius: 50%;
+        }
+
+        input:checked + .radio::after {
+            content: "";
+            width: 10px;
+            height: 10px;
+            background: black;
+            border-radius: 50%;
+            display: inline-block;
+            position: absolute;
+            margin-left: -25px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+<h3>Hobbies</h3>
+
+<input type="checkbox" id="reading">
+<label for="reading">Reading</label>
+
+<input type="checkbox" id="sports">
+<label for="sports">Sports</label>
+
+<h3>Gender</h3>
+
+<input type="radio" name="gender" id="male">
+<label class="radio" for="male">Male</label>
+
+<input type="radio" name="gender" id="female">
+<label class="radio" for="female">Female</label>
+
+</body>
+</html>

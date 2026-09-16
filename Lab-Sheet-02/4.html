@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flexbox Layout</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+
+        .header {
+            height: 100px;
+            background: lightblue;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .main {
+            display: flex;
+            min-height: 400px;
+        }
+
+        .navigation {
+            width: 25%;
+            background: #eee;
+            padding: 20px;
+        }
+
+        .content {
+            width: 75%;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="header">
+    <h1>My Website</h1>
+</div>
+
+<div class="main">
+
+    <div class="navigation">
+        <h3>Navigation</h3>
+        <p>Home</p>
+        <p>About</p>
+        <p>Contact</p>
+    </div>
+
+    <div class="content">
+        <h2>Content</h2>
+        <p>This layout uses CSS Flexbox instead of HTML frames.</p>
+    </div>
+
+</div>
+
+</body>
+</html>

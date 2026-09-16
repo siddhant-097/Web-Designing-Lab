@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Newsletter</title>
+
+    <style>
+        .newsletter {
+            width: 350px;
+            margin: 100px auto;
+        }
+
+        .field {
+            position: relative;
+            margin-top: 25px;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            box-sizing: border-box;
+            border: 1px solid #999;
+        }
+
+        label {
+            position: absolute;
+            left: 10px;
+            top: 12px;
+            background: white;
+            padding: 0 5px;
+            color: #777;
+            transition: 0.3s;
+            pointer-events: none;
+        }
+
+        input:focus + label,
+        input:not(:placeholder-shown) + label {
+            top: -9px;
+            font-size: 12px;
+            color: blue;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="newsletter">
+
+    <h2>Subscribe to Newsletter</h2>
+
+    <form>
+
+        <div class="field">
+
+            <input
+                type="email"
+                id="email"
+                placeholder=" ">
+
+            <label for="email">Email Address</label>
+
+        </div>
+
+        <button type="submit">Subscribe</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>

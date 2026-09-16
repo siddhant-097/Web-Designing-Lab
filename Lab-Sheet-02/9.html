@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Survey Form</title>
+
+    <style>
+        form {
+            width: 500px;
+            margin: 30px auto;
+        }
+
+        fieldset {
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+
+        legend {
+            font-weight: bold;
+        }
+
+        button {
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<form>
+
+    <fieldset>
+        <legend>Personal Information</legend>
+
+        Name:
+        <input type="text" required>
+
+        <br><br>
+
+        Email:
+        <input type="email" required>
+    </fieldset>
+
+    <fieldset>
+        <legend>Survey</legend>
+
+        How satisfied are you?
+
+        <br>
+
+        <input type="radio" name="satisfaction"> Very Satisfied
+        <br>
+        <input type="radio" name="satisfaction"> Satisfied
+        <br>
+        <input type="radio" name="satisfaction"> Not Satisfied
+    </fieldset>
+
+    <button type="submit">Submit Survey</button>
+
+</form>
+
+</body>
+</html>
